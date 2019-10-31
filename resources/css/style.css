@@ -1,0 +1,215 @@
+/*
+ * antopompeo - Main Style
+ * For start2impact.it
+ */
+/* Imports and Variables */
+@font-face{
+	font-family: 'Rubik Bold';
+	src: url(../../resources/fonts/Rubik-Bold.ttf);
+}
+
+@font-face{
+	font-family: 'Rubik Medium';
+	src: url(../../resources/fonts/Rubik-Medium.ttf);
+}
+
+@font-face{
+	font-family: 'Rubik';
+	src: url(../../resources/fonts/Rubik-Light.ttf);
+}
+
+/*color*/
+:root{
+	--main-color: #A1E2FF;
+	--secondary-color: #001FE2;
+}
+
+/* General */
+html{
+	margin: 0;
+	padding:10px;
+	box-sizing: border-box;
+	$.scrollify({
+	section : "div.article .article-title",
+	sectionName : "div.article .article-title",
+	interstitialSection : "",
+	easing: "easeOutExpo",
+	scrollSpeed: 1500,
+	offset : 0,
+	scrollbars: true,
+	standardScrollElements: "25",
+	setHeights: true,
+	overflowScroll: true,
+	updateHash: true,
+	touchScroll:true,
+	before:function() {},
+	after:function() {},
+	afterResize:function() {},
+	afterRender:function() {}
+});
+}
+body{
+background-color:#A1E2FF;
+background-position: absolute;
+}
+/*il nostro header antonio pompeo*/
+h1{
+position:absolute;
+top:120px;
+left:100px;
+font-size:80px;
+color:var(--secondary-color);
+}
+p{
+	top:160px;
+	padding-top:220px;
+	padding-left: 250px;
+	font-size:50px;
+	color:var(--secondary-color);
+}
+/* Header */
+header{
+	position: absolute;
+	top: 10;
+	bottom:50px;
+	right:auto;
+	left:auto;
+}
+
+div.header{
+	padding: 2px;
+	text-align: center;
+	background-color: #A1E2FF;
+
+	/*transform: rotate(1deg);
+	width: 100%;*/
+}
+
+div.header a.site-title{
+	font-size: 50px;
+	font-family: 'Rubik Bold';
+	color: #A1E2FF;
+
+	/*transform: rotate(-3deg);*/
+
+	transition: text-shadow 1s;
+
+	text-shadow: none;
+}
+
+div.header a.site-title:hover{
+	transition: text-shadow 1s;
+	top:auto;
+	right:60px;
+
+	text-shadow: 3px 3px 0 #000;
+}
+/* Main Content */
+article{
+	padding-top:1000px;
+	padding-left:100px;
+	top:50px;
+	bottom:200px;
+}
+
+article .profile-pic{
+	width: 400px;
+	height: auto;
+  position: absolute;
+  top:40px;
+  right:50px;
+	display: block;
+	margin: 0 auto;
+}
+p.class{
+position:absolute;
+top:100px;
+text-align:center;
+padding-left:210px;
+font-size:50px;
+color: var(--secondary-color)
+}
+div.article{
+	position:absolute;
+	top:290px;
+	left: 0px;
+	right:250px;
+	text-align:center;
+	border-radius:10px 10px 10px 10px
+}
+div.article .article-title{
+	font-size: 50px;
+	font-family: 'Rubik Medium';
+	margin: 5px;
+}
+/*MYSKILLS*/
+#softskills {
+max-height:83%;
+margin:5px;
+text-align: right;
+position:absolute;
+top:1290px;
+right:90px;
+left:auto;
+background-size: 400px;
+}
+#facebook{
+	position:absolute;
+	top:250px;
+	left:100px;
+
+}
+#instagram{
+	position:absolute;
+	top:250px;
+	left:400px;
+}
+#twitter{
+	position:absolute;
+	top:250px;
+	left:700px;
+}
+#linkedin{
+	position:absolute;
+	top:250px;
+	left:1000px;
+}
+#contactme{
+	position:absolute;
+	top:2200px;
+	left:300px;
+	text-align:center;
+}
+form {
+  font-family: Arial, Helvetica, sans-serif;
+	position:absolute;
+	top:2600px;
+right:590px;
+}
+label, input[type=text], textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 120%;
+}
+input[type=text], textarea {
+  padding: 30px;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #001FE2;
+  color: #FFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #2181FF;
+}
